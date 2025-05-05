@@ -5,8 +5,6 @@ import {
   Home,
   Package,
   PanelBottom,
-  ShoppingBag,
-  ClipboardList,
   PackageSearch,
   User,
   Cog,
@@ -51,23 +49,12 @@ export function Sidebar() {
                   href="#"
                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  <ClipboardList className="h-5 w-5" />
-                  <span className="sr-only">Pedidos</span>
-                </Link>
-              </TooltipTrigger>
-              <TooltipContent side="right">Pedidos</TooltipContent>
-            </Tooltip>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Link
-                  href="#"
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground"
-                >
+             
                   <PackageSearch className="h-5 w-5" />
-                  <span className="sr-only">Produtos</span>
+                  <span className="sr-only">Entregas</span>
                 </Link>
               </TooltipTrigger>
-              <TooltipContent side="right">Produtos</TooltipContent>
+              <TooltipContent side="right">Entregas</TooltipContent>
             </Tooltip>
             
             <Tooltip>
@@ -77,10 +64,10 @@ export function Sidebar() {
                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground"
                 >
                   <User className="h-5 w-5" />
-                  <span className="sr-only">Clientes</span>
+                  <span className="sr-only">Moradores</span>
                 </Link>
               </TooltipTrigger>
-              <TooltipContent side="right">Clientes</TooltipContent>
+              <TooltipContent side="right">Moradores</TooltipContent>
             </Tooltip>
 
             <Tooltip>
@@ -115,6 +102,8 @@ export function Sidebar() {
     </Tooltip>
   </TooltipProvider>
 </nav>
+     
+     
       </aside>
 
       <div className="flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
@@ -151,14 +140,7 @@ export function Sidebar() {
                   Início
                 </Link>
 
-                <Link
-                  href="#"
-                  className="flex ml-4 items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
-                  prefetch={false}
-                >
-                  <ClipboardList className="h-5 w-5 transition-all" />
-                  Pedidos
-                </Link>
+              
 
                 <Link
                   href="#"
@@ -166,7 +148,7 @@ export function Sidebar() {
                   prefetch={false}
                 >
                   <PackageSearch className="h-5 w-5 transition-all" />
-                  Produtos
+                  Entregas
                 </Link>
 
                 <Link
@@ -175,7 +157,7 @@ export function Sidebar() {
                   prefetch={false}
                 >
                   <User className="h-5 w-5 transition-all" />
-                  Clientes
+                  Moradores
                 </Link>
 
                 <Link
