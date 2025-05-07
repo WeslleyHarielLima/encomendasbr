@@ -9,7 +9,8 @@ import {
   User,
   Cog,
   Truck,
-  LogOut
+  LogOut,
+  LogIn,
 } from "lucide-react";
 import {
   TooltipProvider,
